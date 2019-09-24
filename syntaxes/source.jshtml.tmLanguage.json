@@ -1,0 +1,12 @@
+{
+  "name": "JavaScript HTML",
+  "scopeName": "source.jshtml",
+  "patterns": [
+    {
+      "include": "source.tsx#template-substitution-element"
+    },
+    {
+      "include": "text.html.basic"
+    }
+  ]
+}

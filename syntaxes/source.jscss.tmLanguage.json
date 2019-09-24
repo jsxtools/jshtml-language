@@ -1,0 +1,12 @@
+{
+  "name": "JavaScript CSS",
+  "scopeName": "source.jscss",
+  "patterns": [
+    {
+      "include": "source.tsx#template-substitution-element"
+    },
+    {
+      "include": "source.css"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "jshtml-language",
+  "version": "1.0.0",
+  "displayName": "JavaScript Template Literal File",
+  "description": "Template Literals",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "publisher": "jsxtools",
+  "license": "CC0-1.0",
+  "repository": "jsxtools/jshtml-language",
+  "homepage": "https://github.com/jsxtools/jshtml-language#readme",
+  "bugs": "https://github.com/jsxtools/jshtml-language/issues",
+  "engines": {
+    "vscode": "^1.18.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "jshtml",
+        "aliases": [
+          "JavaScript HTML",
+          "jshtml"
+        ],
+        "extensions": [
+          ".jshtml"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "scopeName": "source.jshtml",
+        "language": "jshtml",
+        "path": "./syntaxes/source.jshtml.tmLanguage.json"
+      }
+    ]
+  }
+}
