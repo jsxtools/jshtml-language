@@ -1,14 +1,19 @@
 {
-  "name": "jshtml-language",
+  "name": "jshtml",
   "version": "1.0.0",
-  "displayName": "JavaScript Template Literal File",
-  "description": "Template Literals",
+  "displayName": "JSHTML Language Support",
+  "description": "JSHTML Language Support adds support for JavaScript HTML files in Visual Studio Code",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "publisher": "jsxtools",
   "license": "CC0-1.0",
   "repository": "jsxtools/jshtml-language",
   "homepage": "https://github.com/jsxtools/jshtml-language#readme",
   "bugs": "https://github.com/jsxtools/jshtml-language/issues",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#293845",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.18.0"
   },
@@ -34,6 +39,26 @@
         "scopeName": "source.jshtml",
         "language": "jshtml",
         "path": "./syntaxes/source.jshtml.tmLanguage.json"
+      },
+      {
+        "scopeName": "text.html.basic.jshtml",
+        "path": "./syntaxes/text.html.basic.jshtml.tmLanguage.json",
+        "injectTo": [
+          "text.html"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.jshtml": "jshtml"
+        }
+      },
+      {
+        "scopeName": "text.html.markdown.jshtml",
+        "path": "./syntaxes/text.html.markdown.jshtml.tmLanguage.json",
+        "injectTo": [
+          "text.html.markdown"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.jshtml": "jshtml"
+        }
       }
     ]
   }
